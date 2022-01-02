@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class Crypto : Codable{
+    var currency : String
+    var price : String
+}

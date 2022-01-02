@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		41CD37162780598500005995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD37152780598500005995 /* AppDelegate.swift */; };
 		41CD37182780598500005995 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD37172780598500005995 /* SceneDelegate.swift */; };
-		41CD371A2780598500005995 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD37192780598500005995 /* ViewController.swift */; };
-		41CD371D2780598500005995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41CD371B2780598500005995 /* Main.storyboard */; };
 		41CD37202780598500005995 /* CryptoViper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41CD371E2780598500005995 /* CryptoViper.xcdatamodeld */; };
 		41CD37222780598500005995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41CD37212780598500005995 /* Assets.xcassets */; };
 		41CD37252780598500005995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41CD37232780598500005995 /* LaunchScreen.storyboard */; };
+		41CD372D278059E000005995 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD372C278059E000005995 /* View.swift */; };
+		41CD372F27805A0E00005995 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD372E27805A0E00005995 /* Interactor.swift */; };
+		41CD373127805A6200005995 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD373027805A6200005995 /* Presenter.swift */; };
+		41CD373327805A7400005995 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD373227805A7400005995 /* Entity.swift */; };
+		41CD373527805A7E00005995 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD373427805A7E00005995 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41CD37122780598500005995 /* CryptoViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CD37152780598500005995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41CD37172780598500005995 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41CD37192780598500005995 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		41CD371C2780598500005995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41CD371F2780598500005995 /* CryptoViper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CryptoViper.xcdatamodel; sourceTree = "<group>"; };
 		41CD37212780598500005995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41CD37242780598500005995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41CD37262780598500005995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41CD372C278059E000005995 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		41CD372E27805A0E00005995 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		41CD373027805A6200005995 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		41CD373227805A7400005995 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		41CD373427805A7E00005995 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,15 @@
 			children = (
 				41CD37152780598500005995 /* AppDelegate.swift */,
 				41CD37172780598500005995 /* SceneDelegate.swift */,
-				41CD37192780598500005995 /* ViewController.swift */,
-				41CD371B2780598500005995 /* Main.storyboard */,
 				41CD37212780598500005995 /* Assets.xcassets */,
 				41CD37232780598500005995 /* LaunchScreen.storyboard */,
 				41CD37262780598500005995 /* Info.plist */,
 				41CD371E2780598500005995 /* CryptoViper.xcdatamodeld */,
+				41CD372C278059E000005995 /* View.swift */,
+				41CD372E27805A0E00005995 /* Interactor.swift */,
+				41CD373027805A6200005995 /* Presenter.swift */,
+				41CD373227805A7400005995 /* Entity.swift */,
+				41CD373427805A7E00005995 /* Router.swift */,
 			);
 			path = CryptoViper;
 			sourceTree = "<group>";
@@ -129,7 +138,6 @@
 			files = (
 				41CD37252780598500005995 /* LaunchScreen.storyboard in Resources */,
 				41CD37222780598500005995 /* Assets.xcassets in Resources */,
-				41CD371D2780598500005995 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41CD371A2780598500005995 /* ViewController.swift in Sources */,
+				41CD372F27805A0E00005995 /* Interactor.swift in Sources */,
+				41CD373127805A6200005995 /* Presenter.swift in Sources */,
 				41CD37162780598500005995 /* AppDelegate.swift in Sources */,
+				41CD373527805A7E00005995 /* Router.swift in Sources */,
+				41CD373327805A7400005995 /* Entity.swift in Sources */,
+				41CD372D278059E000005995 /* View.swift in Sources */,
 				41CD37182780598500005995 /* SceneDelegate.swift in Sources */,
 				41CD37202780598500005995 /* CryptoViper.xcdatamodeld in Sources */,
 			);
@@ -150,14 +162,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		41CD371B2780598500005995 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41CD371C2780598500005995 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		41CD37232780598500005995 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -299,7 +303,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.malozyali.cryptoviper.CryptoViper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.malozyali.cryptoviper.CryptoViper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
