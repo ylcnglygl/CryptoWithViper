@@ -28,6 +28,9 @@ class CryptoViewController : UIViewController, AnyView, UITableViewDelegate, UIT
         var content = cell.defaultContentConfiguration()
         content.text = cryptos[indexPath.row].currency
         content.secondaryText = cryptos[indexPath.row].price
+        cell.contentConfiguration = content
+        cell.backgroundColor = .yellow
+        return cell
     }
     
     private let messageLabel : UILabel = {
@@ -60,7 +63,12 @@ class CryptoViewController : UIViewController, AnyView, UITableViewDelegate, UIT
     }
     
     func update(with error: String) {
-        <#code#>
+        DispatchQueue.main.async {
+            self.cryptos = []
+            self.tableView.isHidden = true
+            self.messageLabel.text = error
+            self.messageLabel.isHidden = false
+        }
     }
     
     override func viewDidLoad() {

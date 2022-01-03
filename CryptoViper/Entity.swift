@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Crypto : Codable{
+struct Crypto : Decodable{
     var currency : String
     var price : String
 }
